@@ -1,0 +1,48 @@
+/* ImageGrid.css */
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px; /* Add some padding to the body */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px; /* Move the padding from the body to the container */
+}
+
+
+
+.item {
+  background-color: #FE4E15;
+  border-radius: 10px;
+  padding: 4px;
+  text-align: center;
+  width: calc(25% - 20px);
+  box-sizing: border-box;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.item img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+
+}
+
+@media (max-width: 768px) {
+  .item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    width: 100%;
+  }
+}

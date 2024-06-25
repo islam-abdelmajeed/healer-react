@@ -1,0 +1,121 @@
+body{
+    padding: 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #fff;
+    padding: 0 5px;
+    margin: 0px ;
+    border-radius: 2px;
+   
+  }
+  
+  
+  .navbar-logo a{
+    color: #fe4f15e5; 
+    text-decoration:none ; /* إزالة الخط الأسفلي */ 
+    font-size: medium;
+  }
+  .navbar-menu-icon {
+    display: none; /* يتم إخفاء الايقونة في الشاشات الكبيرة */
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin-right: 20px;
+   
+  }
+  .navbar-links li a {
+    color: #000; /* تغيير لون الروابط إلى الأسود */
+    text-decoration:none ; /* إزالة الخط الأسفلي */
+    font-size: 14px;
+  
+  }
+  
+  
+  .navbar-links li a:hover {
+     color: #0c0d0ca9;
+     font-size: medium;
+  }
+  .navbar-close-icon{
+    display: none;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    margin-left:10px;
+    gap: 5px;
+  }
+  .btn-log{
+   border-radius: 8px;
+   background: linear-gradient(153deg, #18A884 25.11%, #274344 115.22%);
+  
+  }
+  .btn-reg{
+   border-radius: 8px;
+   background: linear-gradient(180deg, #fe4f15e0 0.28%, #FFB097 220.45%);
+   
+  }
+  /* تعديلات للشاشات الصغيرة */
+  @media screen and (max-width: 768px) {
+    
+  
+    .navbar-menu-icon {
+      display: block; /* يتم عرض الايقونة في الشاشات الصغيرة */
+      order: 3; /* ترتيب ظهور الايقونة*/
+      margin-left: 5px;
+      color: #000;
+    }
+  
+    .navbar-links {
+      display: none; /* يتم إخفاء الروابط في الشاشات الصغيرة بشكل افتراضي */
+      
+    }
+  
+    .navbar-links.open {
+      display: flex; /* يتم عرض الروابط عندما يتم الضغط على الأيقونة */
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgba(247, 248, 248, 0.9); /* خلفية شفافة */
+      width: 100%;
+      height:100%; /* ملء الشاشة */
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      z-index: 9999; /* تأكد من أن الروابط فوق كل العناصر الأخرى */
+    }
+    .navbar-close-icon {
+      display: block;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      cursor: pointer;
+      background-color: #5b1c08db;
+      border-radius: 5%;
+     
+  }
+  
+    .navbar-links li {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+    .navbar-links li a {
+      font-size: large;
+    }
+    .navbar-languages  {
+      display: none;
+    }
+    
+    
+  }
+  

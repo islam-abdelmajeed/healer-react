@@ -1,0 +1,36 @@
+.offers-container {
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.offer-item {
+  position: relative;
+  text-align: center;
+}
+
+.ticket {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 40.5%;
+  height: 6%;
+  background-color: #FE4E15;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.offer-item img {
+  width: 100px; /* تعديل حجم الصور حسب الحاجة */
+  border-radius: 5px;
+}
+
+.offer-item h3 {
+  margin: 10px 0;
+}
+
+.offer-item p {
+  color: #FE4E15; /* تحديد لون البرتقالي للعنصر p */
+}

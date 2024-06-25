@@ -1,0 +1,46 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    
+  }
+  
+  .text-section {
+    text-align: start;
+  }
+  
+  .text-section h1 {
+    margin-bottom: 10px;
+  }
+  
+  .text-section p {
+    margin: 10px;
+    
+
+
+  }
+  
+  .stats {
+    display: flex;
+  }
+  
+  .stats div {
+    margin-right: 20px;
+  }
+  
+  .image-section {
+    margin-left: 50px;
+    background-color: rgb(5, 71, 60);
+    border-radius: 10px;
+    
+}
+  
+ 

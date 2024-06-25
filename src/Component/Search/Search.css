@@ -1,0 +1,82 @@
+.section-background {
+  position: relative;
+  background-image: url('/public/doctorsPhoto.jpeg'); /* ضع مسار الصورة هنا */
+  background-repeat: no-repeat;
+  background-size: cover; /* لجعل الصورة تغطي الخلفية بشكل كامل */
+  background-position: center; /* لضبط موضع الصورة في المنتصف */
+  height: 100vh; /* أو أي ارتفاع تريده */
+}
+
+/* src/ThreeColumnsSection.css */
+.three-columns-section {
+  display: flex;
+  flex-wrap: wrap; /* لجعل العناصر تلتف على الأسطر التالية إذا لم تكن هناك مساحة كافية */
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.column {
+  position: relative;
+  text-align: center;
+  margin: 20px;
+  flex-basis: calc(33.333% - 40px); /* لجعل الأعمدة تتناسب مع بعضها وتترك مسافة 20px بين الأعمدة */
+  flex-grow: 1; /* لتوزيع الأعمدة بالتساوي */
+}
+
+.circle {
+  position: absolute;
+  top: -30px;
+  left: 5%;
+  transform: translateX(-50%);
+  background-color: #FE4E15;
+  color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.column-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.column-title {
+  color: #FE4E15;
+  margin: 10px 0 5px;
+}
+
+.column-description {
+  color: black;
+  margin: 0;
+  text-align: center;
+}
+
+/* لجعل العناصر تتجاوب مع الأجهزة الصغيرة */
+@media (max-width: 768px) {
+  .three-columns-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .column {
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
+
+  .circle {
+    top: -17px;
+    width: 35px;
+    height: 35px;
+  }
+  .last-section{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
