@@ -8,11 +8,11 @@ import DoctorLince from "./componts/DoctorLince";
 const Profile = () => {
   return (
     <div className="flex flex-row gap-5 w-full">
-      {/* <ProfileNavigation /> */}
+      <ProfileNavigation />
       {/* <PersonalInformation /> */}
       {/* <Notifications /> */}
       {/* <LogingAndSecurity /> */}
-      <DoctorLince />
+      {/* <DoctorLince /> */}
     </div>
   );
 };

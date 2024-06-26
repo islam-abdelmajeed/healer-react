@@ -17,7 +17,8 @@ import LoginV2 from "./Component/Login/LoginV2";
 import ChangePassword from "./Component/ChangePassword/ChangePassword";
 import Profile from "./Component/Profile/Profile";
 import AboutUs from "./Component/AboutUs/AboutUs";
-import DoctorsInfo from "./Component/Search/DoctorsInfo"
+import DoctorsInfo from "./Component/Search/DoctorsInfo";
+import Appointments from "./Component/Appointments/Appointments";
 export default function App() {
   const Routers = createBrowserRouter([
     {
@@ -36,6 +37,8 @@ export default function App() {
         { path: "/register/doctor", element: <DoctorRegister /> },
         { path: "/doctorsInfo", element: <DoctorsInfo /> },
         { path: "/login", element: <Login /> },
+        { path: "/Appointments", element: <Appointments /> },
+
         { path: "/profile", element: <Profile /> },
 
         { path: "/loginv2", element: <LoginV2 /> },

@@ -10,6 +10,8 @@ import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import Navbar from "./Component/Nav/Navbar";
 import Footer from "./Component/Footer/Footer";
+import { store } from "./store";
+import { Provider } from "react-redux";
 const theme = createTheme({
   palette: {
     primary: {
@@ -23,11 +25,13 @@ const theme = createTheme({
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <Navbar/>
-      <App />
-      <Footer/>
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <Navbar />
+        <App />
+        <Footer />
+      </ThemeProvider>
+    </Provider>
   </React.StrictMode>
 );
 
